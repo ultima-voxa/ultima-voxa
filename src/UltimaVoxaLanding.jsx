@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button.jsx";
 import { Input } from "@/components/ui/input.jsx";
 import { Card, CardContent } from "@/components/ui/card.jsx";
@@ -6,6 +6,13 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ThumbsUp } from "lucide-react";
 
+<div className="mt-8">
+  <Link to="/submit">
+    <Button className="bg-blue-600 hover:bg-blue-700">
+      ✍️ Laisser un Dernier Mot
+    </Button>
+  </Link>
+</div>
 const sampleMessages = [
   {
     text: "Aime plus que tu n’as peur.",
