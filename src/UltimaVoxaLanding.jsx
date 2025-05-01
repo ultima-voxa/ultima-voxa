@@ -1,7 +1,7 @@
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button.jsx";
+import { Input } from "@/components/ui/input.jsx";
+import { Card, CardContent } from "@/components/ui/card.jsx";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { ThumbsUp } from "lucide-react";
