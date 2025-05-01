@@ -1,11 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UltimaVoxaLanding from './UltimaVoxaLanding';
+import Submit from './pages/Submit';
+import './index.css';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import UltimaVoxaLanding from "./UltimaVoxaLanding";
-import "./index.css";
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <UltimaVoxaLanding />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UltimaVoxaLanding />} />
+        <Route path="/submit" element={<Submit />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
