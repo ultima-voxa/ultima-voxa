@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UltimaVoxaLanding from './UltimaVoxaLanding';
-import Submit from './pages/Submit';
+import Submit from './pages/submit';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
